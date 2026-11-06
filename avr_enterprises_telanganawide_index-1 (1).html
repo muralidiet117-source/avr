@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AVR ENTERPRISES supplies school, office, stationery, sports, electronics, cleaning and occasion essentials across Telangana, India.">
+<title>AVR ENTERPRISES | Supplies for Schools & Institutions</title>
+<style>
+:root{--navy:#102a43;--blue:#1769aa;--teal:#12a89d;--gold:#f4b942;--ink:#172b4d;--muted:#62748a;--pale:#f3f8fc;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid #e6edf4}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.4px;color:var(--navy)}
+.logo{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--teal));display:grid;place-items:center;color:white;font-weight:900;font-size:16px;box-shadow:0 7px 18px #1769aa35}
+.brand small{display:block;font-size:10px;letter-spacing:1.8px;color:var(--muted);font-weight:700}
+nav{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:700;color:#40556d}nav a:hover{color:var(--teal)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:10px;background:var(--teal);color:white;font-weight:800;border:0;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px #12a89d40}.btn.secondary{background:white;color:var(--navy);border:1px solid #d7e2ec}
+.hero{background:radial-gradient(circle at 85% 15%,#1c8eaa 0,transparent 28%),linear-gradient(120deg,#102a43,#174d75 62%,#147e83);color:white;padding:88px 0 82px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}.eyebrow{display:inline-block;padding:7px 12px;border:1px solid #ffffff55;border-radius:99px;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;font-weight:800;color:#c5fff5}
+h1{font-size:clamp(38px,5vw,62px);line-height:1.08;margin:20px 0 18px;letter-spacing:-1.8px}h1 span{color:#75e2d4}.hero p{font-size:18px;color:#e0edf5;max-width:620px;margin:0 0 28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero .secondary{background:transparent;color:white;border-color:#ffffff70}
+.hero-card{background:#ffffff12;border:1px solid #ffffff35;border-radius:24px;padding:26px;box-shadow:0 25px 60px #071d3040;backdrop-filter:blur(8px)}
+.hero-card h3{margin:0 0 16px;font-size:18px}.quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.quick{background:#ffffff12;border-radius:14px;padding:16px}.quick b{display:block;font-size:15px}.quick span{font-size:12px;color:#d3e5ee}
+.trust{background:white;position:relative;margin-top:-24px}.trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;background:white;border-radius:17px;padding:22px;box-shadow:0 12px 40px #102a4312;border:1px solid #edf2f7}
+.trust-item{display:flex;gap:12px;align-items:center}.trust-icon{width:42px;height:42px;border-radius:12px;background:#e7f8f5;color:#078e83;display:grid;place-items:center;font-size:20px}.trust-item b{display:block;font-size:14px}.trust-item small{color:var(--muted);font-size:12px}
+section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}.kicker{color:var(--teal);font-size:12px;font-weight:900;letter-spacing:1.8px;text-transform:uppercase}.section-head h2{font-size:clamp(28px,3.5vw,40px);line-height:1.15;margin:10px 0;color:var(--navy)}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #e6edf4;border-radius:18px;padding:24px;background:white;transition:.2s}.card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #102a4310;border-color:#b9e9e3}.card-icon{width:52px;height:52px;border-radius:15px;background:#edf7ff;display:grid;place-items:center;font-size:26px;margin-bottom:15px}.card h3{margin:0 0 8px;color:var(--navy);font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+.about{background:var(--pale)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-panel{background:linear-gradient(145deg,#e4f6f3,#eaf3fb);border-radius:24px;padding:34px;min-height:300px;display:flex;flex-direction:column;justify-content:center}.about-panel .big{font-size:46px;font-weight:900;color:var(--blue);line-height:1}.about-panel p{color:#496278}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.check{font-size:14px;font-weight:700}.check:before{content:"✓";color:var(--teal);font-weight:900;margin-right:8px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:24px;border-radius:16px;background:#f7fafc;border:1px solid #e9f0f5}.num{font-size:13px;font-weight:900;color:var(--teal);letter-spacing:1px}.step h3{margin:8px 0;color:var(--navy)}.step p{margin:0;color:var(--muted);font-size:14px}
+.cta{background:linear-gradient(115deg,#102a43,#1769aa);color:white;border-radius:24px;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{font-size:30px;line-height:1.2;margin:0 0 8px}.cta p{margin:0;color:#d8e8f3}.cta .btn{background:var(--gold);color:#1e3146;white-space:nowrap}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px}.contact-box{padding:28px;border:1px solid #e5edf4;border-radius:18px}.contact-box h3{margin-top:0;color:var(--navy)}.contact-line{padding:13px 0;border-bottom:1px solid #edf1f5;font-size:14px}.contact-line:last-child{border:0}.contact-line b{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}.contact-form{display:grid;gap:12px}.contact-form input,.contact-form textarea{width:100%;padding:14px;border:1px solid #dce6ee;border-radius:10px;font:inherit}.contact-form textarea{min-height:115px;resize:vertical}.contact-form input:focus,.contact-form textarea:focus{outline:2px solid #12a89d40;border-color:var(--teal)}
+.social-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.social-links a{display:inline-flex;align-items:center;gap:8px;padding:11px 14px;border:1px solid #dce7ef;border-radius:10px;font-size:13px;font-weight:800;color:var(--navy);background:#f8fbfd}.social-links a:hover{border-color:var(--teal);color:#078e83}.contact-line a{color:var(--blue);font-weight:700}.floating-wa{position:fixed;right:18px;bottom:18px;z-index:20;background:#168b55;color:white;padding:13px 17px;border-radius:999px;font-weight:800;box-shadow:0 8px 25px #0003}footer{background:#0c2034;color:#d7e4ee;padding:28px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:13px}.foot strong{color:white}.foot small{color:#9eb2c4}
+@media(max-width:800px){nav{display:none}.hero{padding:65px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-card{max-width:540px}.cards{grid-template-columns:repeat(2,1fr)}.trust-row{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.hero p{font-size:16px}.quick-grid{grid-template-columns:1fr 1fr}.checklist{grid-template-columns:1fr}.cta{padding:28px}.foot{flex-direction:column;align-items:flex-start}.nav{height:66px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="logo">AVR</span><span>AVR ENTERPRISES<small>SUPPLIES • SERVICE • TRUST</small></span></a>
+<nav><a href="#home">Home</a><a href="#categories">What We Supply</a><a href="#about">About</a><a href="#process">How It Works</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="#contact">Enquire Now</a>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><span class="eyebrow">Your institutional supply partner</span>
+<h1>Everyday essentials.<br><span>Delivered to your institution.</span></h1>
+<p>AVR ENTERPRISES supplies quality stationery, school essentials, sports materials, electronics, cleaning products and occasion supplies to schools and institutions.</p>
+<div class="hero-actions"><a class="btn" href="#categories">Explore Supplies</a><a class="btn secondary" href="#contact">Request a Quote</a></div>
+</div>
+<div class="hero-card"><h3>One supplier for multiple needs</h3><div class="quick-grid">
+<div class="quick"><b>📚 Stationery</b><span>Office & classroom essentials</span></div>
+<div class="quick"><b>💻 Electronics</b><span>Computers, printers & accessories</span></div>
+<div class="quick"><b>🏅 Sports</b><span>Games & physical education</span></div>
+<div class="quick"><b>🧹 Cleaning</b><span>Hygiene & sanitation supplies</span></div>
+<div class="quick"><b>🍬 Occasion supplies</b><span>Sweets & event requirements</span></div>
+<div class="quick"><b>🚚 Delivery</b><span>Direct to school / institution</span></div>
+</div></div>
+</div></section>
+
+<div class="trust"><div class="wrap trust-row">
+<div class="trust-item"><span class="trust-icon">🚚</span><span><b>Institution-level delivery</b><small>Delivery to your location</small></span></div>
+<div class="trust-item"><span class="trust-icon">🧾</span><span><b>Business documentation</b><small>GST bills and receipts available</small></span></div>
+<div class="trust-item"><span class="trust-icon">📍</span><span><b>Service area</b><small>All over Telangana</small></span></div>
+</div></div>
+
+<section id="categories"><div class="wrap"><div class="section-head"><span class="kicker">Our supply categories</span><h2>Supplies for schools & institutions</h2><p>Share your requirement with us. We arrange products based on your order and institutional needs.</p></div>
+<div class="cards">
+<article class="card"><div class="card-icon">📚</div><h3>Stationery & General Supplies</h3><p>Notebooks, pens, pencils, paper, files, registers, office stationery and everyday classroom requirements.</p></article>
+<article class="card"><div class="card-icon">💻</div><h3>Computers & Electronics</h3><p>Desktop systems, laptops, printers, scanners, projectors, cables, mouse, keyboards and accessories.</p></article>
+<article class="card"><div class="card-icon">🏅</div><h3>Sports Materials</h3><p>Sports goods, physical education materials, indoor and outdoor games and school sports-day requirements.</p></article>
+<article class="card"><div class="card-icon">🧼</div><h3>Cleaning & Hygiene</h3><p>Liquid handwash, dishwash, toilet cleaner, soaps and other school cleanliness essentials.</p></article>
+<article class="card"><div class="card-icon">🍬</div><h3>Sweets & Occasion Supplies</h3><p>Laddu, boondi, jilebi and other order-based supplies for school celebrations and special occasions.</p></article>
+<article class="card"><div class="card-icon">📦</div><h3>Custom Institutional Orders</h3><p>Have a specific requirement? Contact us with your item list and quantity for a supply quotation.</p></article>
+</div></div></section>
+
+<section class="about" id="about"><div class="wrap about-grid">
+<div><span class="kicker">About AVR ENTERPRISES</span><h2 style="font-size:38px;line-height:1.15;color:var(--navy);margin:12px 0">A dependable supply partner for your daily needs.</h2>
+<p style="color:var(--muted)">AVR ENTERPRISES is a supply business serving government and private schools, educational institutions, offices, organisations and other institutions. Our focus is to make ordering convenient with clear communication, organised documentation and delivery to the customer location.</p>
+<div class="checklist"><div class="check">Order-based supply</div><div class="check">Direct delivery</div><div class="check">GST billing</div><div class="check">Advance receipts</div></div></div>
+<div class="about-panel"><div class="big">AVR</div><h3 style="font-size:24px;color:var(--navy);margin:12px 0 0">AVR ENTERPRISES</h3><p>Office stationery • School essentials • Electronics • Sports • Cleaning supplies • Occasion supplies</p><p style="font-weight:800;color:var(--blue);margin-bottom:0">Serving institutions across Telangana, India.</p></div>
+</div></section>
+
+<section id="process"><div class="wrap"><div class="section-head"><span class="kicker">Simple ordering</span><h2>How it works</h2><p>From requirement to delivery, we keep the process straightforward.</p></div>
+<div class="steps">
+<div class="step"><span class="num">STEP 01</span><h3>Share your requirement</h3><p>Send your product list, quantities and delivery location by email or phone.</p></div>
+<div class="step"><span class="num">STEP 02</span><h3>Receive a quotation</h3><p>We review your requirement and share availability, pricing and order details.</p></div>
+<div class="step"><span class="num">STEP 03</span><h3>Confirm & receive</h3><p>After confirmation, we arrange the order and coordinate delivery to your institution.</p></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="cta"><div><h2>Looking for supplies for your school?</h2><p>Send us your requirement. We’ll help you plan your order.</p></div><a class="btn" href="mailto:avrenterprises67@gmail.com?subject=Supply%20Enquiry%20-%20AVR%20ENTERPRISES">Email Your Requirement</a></div></div></section>
+
+<section id="contact"><div class="wrap"><div class="section-head"><span class="kicker">Get in touch</span><h2>Let’s discuss your requirement</h2><p>Contact AVR ENTERPRISES for product details, quotations and institutional orders.</p></div>
+<div class="contact-grid">
+<div class="contact-box"><h3>Business information</h3>
+<div class="contact-line"><b>Business name</b>AVR ENTERPRISES</div>
+<div class="contact-line"><b>Email</b><a href="mailto:avrenterprises67@gmail.com">avrenterprises67@gmail.com</a></div>
+<div class="contact-line"><b>Contact number</b><a href="tel:+917659044865">7659044865</a></div>
+<div class="contact-line"><b>WhatsApp Business number</b><a href="https://wa.me/918374885700" target="_blank" rel="noopener">8374885700</a></div>
+<div class="contact-line"><b>GSTIN</b>36GICPA6281H1ZA</div>
+<div class="contact-line"><b>FSSAI Registration</b>23626037000374</div>
+<div class="contact-line"><b>Service area</b>All over Telangana, India</div>
+</div>
+<div class="contact-box"><h3>Connect with AVR ENTERPRISES</h3>
+<p style="color:var(--muted);font-size:14px;margin-top:0">Follow our updates or message us directly.</p>
+<div class="social-links">
+<a href="https://wa.me/message/D3Y5KHJDKZCUA1" target="_blank" rel="noopener">💬 WhatsApp Business</a>
+<a href="https://www.instagram.com/avr_enterprises67?dlrf=Zm9wNnl3aGlvNTY0" target="_blank" rel="noopener">📷 Instagram</a>
+<a href="https://whatsapp.com/channel/0029Vb8pmImLtOjLzcm2ka47" target="_blank" rel="noopener">📢 Join WhatsApp Channel</a>
+</div>
+<hr style="border:0;border-top:1px solid #edf1f5;margin:24px 0">
+<h3>Send an enquiry</h3>
+<form class="contact-form" id="enquiryForm">
+<input id="name" type="text" placeholder="Your name / Institution name" required>
+<input id="phone" type="tel" placeholder="Your phone number" required>
+<input id="subject" type="text" placeholder="Products required" required>
+<textarea id="message" placeholder="Tell us the items, quantities and delivery location"></textarea>
+<button class="btn" type="submit">Prepare Email Enquiry</button>
+<small style="color:var(--muted)">This opens your email app with the enquiry details. No information is stored on this website.</small>
+</form></div>
+</div></div></section>
+</main>
+<a class="floating-wa" href="https://wa.me/message/D3Y5KHJDKZCUA1" target="_blank" rel="noopener" aria-label="Chat with AVR ENTERPRISES on WhatsApp">WhatsApp Us</a>
+<footer><div class="wrap foot"><div><strong>AVR ENTERPRISES</strong><br><small>Supplies for schools, offices & institutions.</small></div><div>GSTIN: 36GICPA6281H1ZA<br><small><a href="tel:+917659044865">Call: 7659044865</a> · <a href="mailto:avrenterprises67@gmail.com">Email us</a><br>© <span id="year"></span> AVR ENTERPRISES. All rights reserved.</small></div></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('enquiryForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim();
+ const phone=document.getElementById('phone').value.trim();
+ const subject=document.getElementById('subject').value.trim();
+ const message=document.getElementById('message').value.trim();
+ const body=`Name / Institution: ${name}%0D%0APhone: ${phone}%0D%0AProducts required: ${subject}%0D%0ADetails: ${message}`;
+ window.location.href=`mailto:avrenterprises67@gmail.com?subject=${encodeURIComponent('Supply Enquiry - '+subject)}&body=${body}`;
+});
+</script>
+</body></html>
